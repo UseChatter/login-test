@@ -14,6 +14,7 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
 /* Set a style for all buttons */
 button {
   background-color: #4CAF50;
@@ -188,6 +189,10 @@ input:hover,
   background-color: #333;
   color: white;
 }
+.pg {
+  background-color: #34a853;
+  color: white;
+}
 
 .twitter {
   background-color: #55ACEE;
@@ -205,10 +210,10 @@ input[type=submit] {
   color: white;
   cursor: pointer;
 }
-  
 
 input[type=submit]:hover {
-  background-color: #45a049
+  background-color: #45a049;
+}
 
 /* Two-column layout */
 .col {
@@ -288,27 +293,27 @@ input[type=submit]:hover {
 
       <div class="col">
       <a href="#" class="google btn"><i class="fab fa-google fa-fw">
-          </i> Continue with Google
+          </i> Login with Google
         </a>
         <a href="#" class="fb btn">
           <i class="fab fa-github fa-fw"></i> Github - <b>Coming soon</b>
          </a>
                        <a href="#" class="twitter btn">
-          <i class="fab fa-twitter"></i></i> Twitter - <b>Coming soon</b>
-                               <a href="#" class="twitter btn">
-          <i class="fab fa-google-play"></i></i> Play Games - <b>Coming soon</b>
-        <a href="#" class="play btn">
+          <i class="fab fa-twitter"></i> Twitter - <b>Coming soon</b>
+        </a>
+        <a href="#" class="pg btn">
+          <i class="fab fa-google-play"></i> Play Games - <b>Coming soon</b>
         </a>
       </div>
 
       <div class="col">
         <div class="hide-md-lg">
-          <p>Or sign in manually:</p>
+          <p>Or use your email:</p>
         </div>
-        <input type="text" name="text" placeholder="Name" required>
+<input type="text" name="name" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login"><input type="submit" value="Sign Up">
+        <input type="submit" value="Login" style="width: 45%; padding: 10px">&nbsp<input type="submit" value="Sign Up" style="width: 45%; padding: 10px;">
       </div>
       
     </div>
@@ -318,17 +323,20 @@ input[type=submit]:hover {
 <div class="bottom-container">
   <div class="row">
     <div class="col">
-      <a href="#" style="color:white" class="btn">First time? Sign up</a>
+      <a style="color:white" class="">By signing up you agree to our Terms Of Use</a>
     </div>
     <div class="col">
-      <a href="#" style="color:white" class="btn">Forgot password?</a>
+      <a href="#" style="color:white" class="btn">Forgot your password?</a>
     </div>
   </div>
 </div>
 <body>
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Exit Form">&times;</span>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 </body>
 </html>
+
+    }
+}
 </script>
 
 </body>
