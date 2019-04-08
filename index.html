@@ -14,7 +14,18 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
+  .loginclick {  
+    margin-left: 30px;
+    margin-top: 1px;
+    width: 84px;
+    height: 45px;
+}
+  .signupclick {  
+    margin-left: 60px;
+    margin-top: 1px;
+    width: 84px;
+    height: 45px;
+}
 /* Set a style for all buttons */
 button {
   background-color: #4CAF50;
@@ -206,10 +217,10 @@ input[type=submit] {
   color: white;
   cursor: pointer;
 }
+  
 
 input[type=submit]:hover {
-  background-color: #45a049;
-}
+  background-color: #45a049
 
 /* Two-column layout */
 .col {
@@ -309,7 +320,7 @@ input[type=submit]:hover {
         <input type="text" name="text" placeholder="Name" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Login"> <input type="submit" value="Sign Up">
+        <input type="submit" value="Login" class="loginclick"> <input type="submit" value="Sign Up" class="signupclick">
       </div>
       
     </div>
@@ -327,7 +338,7 @@ input[type=submit]:hover {
   </div>
 </div>
 <body>
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Exit Form">&times;</span>
 </body>
 </html>
 </script>
